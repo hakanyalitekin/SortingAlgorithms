@@ -6,4 +6,4 @@
 * Merge Sort
 * Heap Sort
 
-Not: Ara ara yeni algoritmalar eklemeye çaşışacağım.
+Not: Ara ara yeni algoritmalar eklemeye çalışacağım.
