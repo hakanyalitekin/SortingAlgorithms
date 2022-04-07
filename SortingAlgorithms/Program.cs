@@ -10,15 +10,18 @@ namespace SortingAlgorithms
             // Görselleştirmek için -> https://www.toptal.com/developers/sorting-algorithms
             // Tek tek incelemek için -> https://sadanandpai.github.io/sorting-visualizer/dist/
             // Tek tek incelemek için -> https://visualgo.net/en/sorting
-            int[] array = RandomArray.Generate(10, 10); /*{ 33, 11, 44, 22 }*/;
+            //int[] array = RandomArray.Generate(10, 10); /*{ 33, 11, 44, 22 }*/;
 
             do
             {
-                //int[] array = { 6, 5, 3, 1, 8, 7, 2, 4 };
+                int[] array = { 6, 5, 3, 1, 8, 7, 2, 4 };
 
-                //int[] dizi = Merge.SortV2(array); Merge sıralamasını kavramak için açılıp debug edilmelidir.
+
+                //Merge sıralamasını kavramak için açılıp debug edilmelidir. Bu dizi kullanılmalıdır -> int[] array = { 44,  11, 33, 22 };
+                //int[] dizi = Merge.SortV2(array);  
+
                 Console.Clear();
-                Console.WriteLine("-> Bubble Sorting: 1 \n-> Selection Sorting: 2 \n-> Insertion Sorting: 3 \n-> Merge Sorting: 4");
+                Console.WriteLine("-> Bubble Sorting: 1 \n-> Selection Sorting: 2 \n-> Insertion Sorting: 3 \n-> Merge Sorting: 4 \n-> Heap Sorting: 5");
                 Console.Write("Sıralama Seçiniz:");
                 int selectedSort = int.TryParse( Console.ReadLine(),out selectedSort)?selectedSort:0;
 

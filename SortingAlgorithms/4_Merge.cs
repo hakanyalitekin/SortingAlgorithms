@@ -6,7 +6,7 @@ namespace SortingAlgorithms
     {
         public static void Sort(int[] array, int left, int right)
         {
-            Console.WriteLine("Merge (Birleştirme) Sort");
+            //Console.WriteLine("Merge (Birleştirme) Sort");
 
             //Recursive yani kendi kendini çağıran bir metot.
 
@@ -23,8 +23,8 @@ namespace SortingAlgorithms
 
                 DoMerge(array, left, (leftEnd + 1), right);
 
-                Printer.Print(array);
             }
+            Printer.Print(array);
 
         }
         public static void DoMerge(int[] array, int left, int rightStart, int right)
@@ -67,7 +67,7 @@ namespace SortingAlgorithms
 
 
         #region Kavramak için Farklı Bir Versiyon
-        static int[] SortV2(int[] dizi)
+        public static int[] SortV2(int[] dizi)
         {
             if (dizi.Length <= 1)
                 return dizi; //1 eleman zaten kıyaslanacak bir şey yok yukarı yolluyoruz.
